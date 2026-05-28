@@ -4,12 +4,12 @@
 }
 body{
 
-background-color: rgb(5, 5, 5);
+background-color: rgb(212, 199, 199);
 
 }
 
 .cabecalho{
-      background-color: rgb(32, 76, 141);
+      background-color: aquamarine;
      display: flex;
     justify-content: space-between;
 }
