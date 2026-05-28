@@ -1,18 +1,28 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*
+{
      margin: 0;
      padding: 0;
 }
 body{
 
-background-color: rgb(212, 199, 199);
-
+background-color: rgb(5, 5, 5);
+color: white;
+font-family: "Roboto Slab", serif;
 }
 
-.cabecalho{
-      background-color: aquamarine;
+.cabecalho{ 
+     background-color: whitesmoke;
      display: flex;
     justify-content: space-between;
+    padding: 15px 25px;
+
+
+
+
 }
+
 
       
 
