@@ -10,6 +10,9 @@ body{
 background-color: rgb(208, 208, 208);
 color: rgb(0, 0, 0);
 font-family: "Roboto Slab", serif;
+
+
+
 }
 
 .cabecalho{ 
@@ -17,12 +20,9 @@ font-family: "Roboto Slab", serif;
      display: flex;
     justify-content: space-between;
     padding: 15px 25px;
-
-
-
-
+    align-items: center;
 }
 
-
-      
-
+.cartao{
+     width: 260px; 
+     height: 200px;  
