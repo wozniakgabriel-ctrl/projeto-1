@@ -1,46 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
-*
-{
-     margin: 0;
-     padding: 0;
-}
-body{
-
-background-color: rgb(208, 208, 208);
-color: rgb(0, 0, 0);
-font-family: "Roboto Slab", serif;
-
-
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
 
 }
 
-.cabecalho{ 
-     background-color: rgb(253, 253, 253);
-     display: flex;
+body {
+    background-color: #fffef1;
+    color: #000000;
+    font-family: "Varela Round", sans-serif;
+}
+.cabecalho{
+    background-color: #0004ff7b;
+    display: flex;
     justify-content: space-between;
     padding: 15px 25px;
     align-items: center;
 }
 
 .cartao{
-     width: 260px; 
-     height: 200px;  
-font-size: 18px;
+    width: 360px;
+    height: 300px;
 }
-
 .cartao img{
-width: 100%;
-
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.cartao-interno{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao:hover .cartao-interno{
+    transform: rotateY(180deg);
+}
+.cartao-verso{
+    transform: rotateY(180deg);
 }
 
-miain{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     flex: 1;
+.cartao-frente, .cartao-verso{
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(128, 208, 255, 0.897);
+    backface-visibility: hidden;
 }
-
+section{
+    display: flex;
+    gap:32px;
+}
 .cartao-interno{
      position: relative;
      transition: transform 0.8s;
